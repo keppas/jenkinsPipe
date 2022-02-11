@@ -1,0 +1,11 @@
+node {
+    stage('create file'){
+        sh 'touch file'
+    }
+    stage('Write'){
+        sh 'echo "some random message" > file'
+    }
+    stage("Pring"){
+        sh 'cat file'
+    }
+}
